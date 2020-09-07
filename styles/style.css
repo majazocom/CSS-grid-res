@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+
+h1, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero > * {
+    color: #484747;
+}
+
+.hero > h1 {
+    font-size: 4rem;
+}
+
+.hero > article > p {
+    font-size: 1.5rem;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1483794344563-d27a8d18014e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+a {
+    background-color: rgb(255 105 142);
+    color: white;
+    border-radius: .25rem;
+    padding: .5rem;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(255 105 142 / 67%);
+}
+
+.hero > article > a {
+    margin-top: 2rem;
+}
+
+.cards > ul > li > a {
+    margin-left: 1rem;
+}
+
+.cards > ul {
+    display: grid;
+    padding-inline-start: 0;
+    list-style-type: none;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+    padding-bottom: 1.5rem;
+}
+
+.cards > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+.cards > ul > li > figure > img {
+    width: 100%;
+    height: auto;
+}
+
+.cards > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255 105 142 / 67%);
+    width: 100%;
+}
+
+.cards > ul > li > figure > figcaption > h3 {
+    color: white;
+    padding-left: 0.75rem;
+}
+
+.cards > ul > li > p {
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container a{
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: #484747;
+    color: white;
+    text-align: center;
+    padding: .3rem;
+}
