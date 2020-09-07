@@ -133,9 +133,9 @@ footer {
     .hero h1 {
         
     margin-block-start: 0.53em;
-    margin-block-end: 0.53em;
+    margin-block-end: 0.1em;
     }
-    .hero .article {
+    .hero article {
         padding-bottom: 1rem;
     }
     .hero > article > p {
